@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/header"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_back_arrow"
+            android:padding="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/back_arrow" >
+        </androidx.appcompat.widget.Toolbar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageViewEvent"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="25dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewEvent">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="284dp"
+            android:text="Nome do Evento"
+            android:textColor="@color/blue4"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewName">
+
+            <ImageView
+                android:id="@+id/imageLocalIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/local_icon" />
+
+            <TextView
+                android:id="@+id/textViewLocalName"
+                style="@style/textEventDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Local do Evento"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageLocalIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewLocalStreetNumber"
+                style="@style/textEventDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rua, número"
+                app:layout_constraintStart_toStartOf="@+id/textViewLocalName"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLocalName" />
+
+            <TextView
+                android:id="@+id/textViewCityState"
+                style="@style/textEventDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cidade/Estado"
+                app:layout_constraintStart_toStartOf="@+id/textViewLocalStreetNumber"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLocalStreetNumber" />
+
+            <ImageView
+                android:id="@+id/imageHourIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/textViewDate"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hour_icon" />
+
+            <TextView
+                android:id="@+id/textViewDate"
+                style="@style/textEventDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data do Evento"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewHour"
+                style="@style/textEventDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora do Evento"
+                app:layout_constraintStart_toStartOf="@+id/textViewDate"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/lineEventDetail1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="?actionBarDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:justificationMode="inter_word"
+            android:text="@string/loreIpsun"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lineEventDetail1" />
+
+        <Space
+            android:id="@+id/space"
+            style="@style/buttonTop"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescription"
+            tools:layout_editor_absoluteX="99dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonParticipants"
+            style="@style/buttonDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_event_detail"
+            android:text="Participantes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+
+        <ImageView
+            android:id="@+id/lineEventDetail2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="?actionBarDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonParticipants" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonEditEvent"
+            style="@style/buttonDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Editar evento"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/lineEventDetail2"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <Button
+            android:id="@+id/buttonSubscribe"
+            style="@style/buttonLg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:text="Inscrever-se"
+            app:layout_goneMarginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonEditEvent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

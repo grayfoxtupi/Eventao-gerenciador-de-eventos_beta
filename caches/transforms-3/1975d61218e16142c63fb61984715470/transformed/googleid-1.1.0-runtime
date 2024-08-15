@@ -1,0 +1,10 @@
+com.google.android.libraries.identity.googleid.GetGoogleIdOption
+com.google.android.libraries.identity.googleid.GetGoogleIdOption$Builder
+com.google.android.libraries.identity.googleid.GetGoogleIdOption$Companion
+com.google.android.libraries.identity.googleid.GetSignInWithGoogleOption
+com.google.android.libraries.identity.googleid.GetSignInWithGoogleOption$Builder
+com.google.android.libraries.identity.googleid.GetSignInWithGoogleOption$Companion
+com.google.android.libraries.identity.googleid.GoogleIdTokenCredential
+com.google.android.libraries.identity.googleid.GoogleIdTokenCredential$Builder
+com.google.android.libraries.identity.googleid.GoogleIdTokenCredential$Companion
+com.google.android.libraries.identity.googleid.GoogleIdTokenParsingException

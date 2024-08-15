@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Eventão</string>
+
+
+    <string name="txtCadastroConta">Cadastro de conta</string>
+    <string name="txtCadastroEvento">Cadastro de evento</string>
+    <string name="txtEditEvento">Edição de evento</string>
+
+    <string name="event_image">Event Image</string>
+    <string name="qr_code">Código QR</string>
+
+    <string name="txtNome">Seu nome</string>
+    <string name="txtEmail">Seu email</string>
+    <string name="txtCpf">Seu CPF</string>
+    <string name="txtPassword">Sua senha</string>
+
+    <string name="txtExpNameEvent">Ex.: Palestra sobre Java</string>
+    <string name="txtExpLocalEvent">Ex.: Fatec Itaquera</string>
+    <string name="txtExpStreet_number">Ex.: Rua Um, 01</string>
+    <string name="txtExpCity_State">Ex.: São Paulo/SP </string>
+    <string name="txtExpDateEvent">Ex.: 29 de Fevereiro </string>
+    <string name="txtExpHourEvent">Ex.: Sexta às 20h00 </string>
+    <string name="txtExpSynopsisEvent">Ex.: Junte-se a nós para uma palestra envolvente e informativa sobre Java...</string>
+
+    <string name="txtHome">Home</string>
+    <string name="txtQRCode">QRCode</string>
+    <string name="txtAddEvent">Criar evento</string>
+    <string name="txtMainEvent">Evento vigênte</string>
+    <string name="txtParticpantsEvent">Participantes inscritos</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="loreIpsun">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s.</string>
+
+
+</resources>

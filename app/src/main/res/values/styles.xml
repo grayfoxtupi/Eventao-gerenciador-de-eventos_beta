@@ -1,0 +1,167 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="linearVertical">
+        <item name="android:padding">30dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="spaceTop">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="spaceInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">8dp</item>
+    </style>
+
+    <style name="buttonTop">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="backPage">
+        <item name="navigationIcon">@drawable/back_arrow</item>
+        <item name="contentInsetStart">50dp</item>
+        <item name="contentInsetStartWithNavigation">10dp</item>
+    </style>
+
+    <style name="logoCabecalho">
+        <item name="android:src">@drawable/logo_eventao</item>
+        <item name="android:layout_marginTop">80dp</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="title">
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="titleDarkBg" parent="title">
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <style name="titleLightkBg" parent="title">
+        <item name="titleTextColor">@color/black1</item>
+    </style>
+
+    <style name="cancelink">
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    
+    <style name="inputlayout">
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColorHint">@color/gray0</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="inputLayoutDk" parent="inputlayout">
+        <item name="android:background">@drawable/border_input_dk</item>
+    </style>
+
+    <style name="inputLayoutLg" parent="inputlayout">
+        <item name="android:background">@drawable/border_input_lg</item>
+    </style>
+
+
+    <style name="inputPersonNameLg" parent="inputLayoutLg">
+        <item name="android:drawableStart">@drawable/person_icon</item>
+        <item name="android:hint">@string/txtNome</item>
+    </style>
+
+    <style name="inputPersonNameDk" parent="inputLayoutDk">
+        <item name="android:drawableStart">@drawable/person_icon</item>
+        <item name="android:hint">@string/txtNome</item>
+    </style>
+
+    <style name="inputEmailLg" parent="inputLayoutLg">
+        <item name="android:drawableStart">@drawable/email_icon</item>
+        <item name="android:hint">@string/txtEmail</item>
+    </style>
+
+    <style name="inputEmailDk" parent="inputLayoutDk">
+        <item name="android:drawableStart">@drawable/email_icon</item>
+        <item name="android:hint">@string/txtEmail</item>
+    </style>
+
+    <style name="inputPasswordLg" parent="inputLayoutLg">
+        <item name="android:drawableStart">@drawable/password_icon</item>
+        <item name="android:hint">@string/txtPassword</item>
+    </style>
+
+    <style name="inputPasswordDk" parent="inputLayoutDk">
+        <item name="android:drawableStart">@drawable/password_icon</item>
+        <item name="android:hint">@string/txtPassword</item>
+    </style>
+
+    <style name="inputCpfLg" parent="inputLayoutLg">
+        <item name="android:drawableStart">@drawable/cpf_icon</item>
+        <item name="android:hint">@string/txtCpf</item>
+    </style>
+
+    <style name="inputCpfDk" parent="inputLayoutDk">
+        <item name="android:drawableStart">@drawable/cpf_icon</item>
+        <item name="android:hint">@string/txtCpf</item>
+    </style>
+
+    <style name="textEventDetails">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="inputAddEvent" parent="inputlayout">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="inputAddImage" parent="inputAddEvent">
+        <item name="android:drawableEnd">@drawable/image_up_icon</item>
+    </style>
+
+
+
+
+    <style name="button">
+        <item name="android:textSize">18dp</item>
+        <item name="android:padding">14dp</item>
+    </style>
+
+    <style name="buttonDetail">
+        <item name="android:drawableEnd">@drawable/go_arrow</item>
+        <item name="android:background">@drawable/btn_event_detail</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+
+    <style name="buttonLg" parent="button">
+        <item name="android:background">@drawable/btn_lg</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="buttonDk" parent="button">
+        <item name="android:background">@drawable/btn_dk</item>
+        <item name="android:textColor">@color/blue3</item>
+    </style>
+
+
+</resources>
